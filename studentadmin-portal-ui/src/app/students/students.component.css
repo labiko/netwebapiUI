@@ -1,0 +1,28 @@
+.page-header {
+    background: #f1f1f1;
+}
+
+.page-header h1 {
+    padding: 16px 0px;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+}
+
+.search-input {
+    border: 1px solid #ccc;
+   outline: none;
+   padding: 8px 10px;
+    border-radius: 3px;
+}
+
+.search-input :active {
+    border: 1px solid #bbb
+}
+
+
+.search-input :focus {
+    border: 1px solid #aaa
+}
