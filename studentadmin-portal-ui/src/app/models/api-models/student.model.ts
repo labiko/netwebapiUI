@@ -5,10 +5,11 @@ export interface Student {
     id : string 
     firstName : string
     lastName : string
+    dateOfBirth : string
     email : string 
-    mobile : string 
-    profileImageUrl : string 
+    mobile : number 
     genderId : string 
+    profileImageUrl : string 
     gender : Gender
     address : Adress
 }

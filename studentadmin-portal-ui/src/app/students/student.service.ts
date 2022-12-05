@@ -6,13 +6,17 @@ import { Student } from '../models/api-models/student.model';
 @Injectable({
   providedIn: 'root'
 })
+
 export class StudentService {
-private baseUrl = 'https://localhost:44308';
+  private baseUrl = 'https://localhost:44308';
 
-  constructor(private httpClient : HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
-  getStudent() : Observable<Student[]>
-  {
+  getStudents(): Observable<Student[]> {
     return this.httpClient.get<Student[]>(this.baseUrl + '/students')
+  }
+
+  getStudent(studentId: string): Observable<Student> {
+    return this.httpClient.get<Student>(this.baseUrl + '/students/' + studentId)
   }
 }
